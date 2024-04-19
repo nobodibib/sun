@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* La déclaration de la police 'YourCustomFont' a été retirée */
+}
+
+.main-header {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    text-align: center;
+    padding: 5px 0; /* Espace intérieur en haut et en bas du header */
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 130px; /* Ajuste la largeur de ton logo */
+    margin-right: 10px; /* Ajuste l'espace entre le logo et le titre */
+    margin-top: -82px; /* Ajuste cette valeur pour monter le logo */
+    padding-top: -70px;
+}
+
+@font-face {
+    font-family: 'sobread'; /* Nom que vous donnerez à votre police */
+    src: url('sobread.ttf') format('truetype');
+    /* Ajoutez d'autres formats si nécessaire (woff, woff2, etc.) */
+}
+
+@font-face {
+    font-family: 'code'; /* Nom que vous donnerez à votre police */
+    src: url('code.ttf') format('truetype');
+    /* Ajoutez d'autres formats si nécessaire (woff, woff2, etc.) */
+}
+
+.main-header h1 {
+    font-family: 'sobread', cursive;
+    font-size: 150px; /* Taille du titre à 500 pixels */
+    font-weight: 500; /* Ajuste cette valeur pour réduire l'épaisseur */
+    /* Ajoutez d'autres styles de police ici */
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+
+.main-nav {
+    margin-top: -70px; /* Espace entre le titre et la navigation */
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px; /* Espace entre les boutons de navigation */
+}
+
+.main-nav a {
+    font-family: 'code', cursive;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    transition: color 0.5s ease; /* Transition douce de la couleur au survol */
+}
+
+.main-nav a:hover {
+    color: hsl(61, 100%, 83%); /* Couleur au survol */
+}
